@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Student</title>
+</head>
+<body>  
+
+<?php
+$name = $age = $branch = $year = $semester = $score = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+ 
+    
+    $name = test_input($_POST["stname"]);
+
+  
+    $age = test_input($_POST["stage"]);
+  
+    $branch = test_input($_POST["stbranch"]);
+  
+    $year = test_input($_POST["styear"]);
+ 
+    $semester = test_input($_POST["stsem"]);
+
+    $score = test_input($_POST["stscore"]);
+
+echo "<h2>Inputs are:</h2>";
+echo $name;
+echo "<br>";
+echo $age;
+echo "<br>";
+echo $branch;
+echo "<br>";
+echo $year;
+echo "<br>";
+echo $semester;
+echo "<br>";
+echo $score;
+}
+?>
+
+</body>
+</html>
